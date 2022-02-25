@@ -9,10 +9,15 @@ void main() => runApp(
             title: const Text('Remote Control'),
             backgroundColor: Colors.blueGrey[500],
           ),
-          body:const Center(
-            child: Image(
-              image: AssetImage('images/graduation.jpg')
-            ),
+          body:Column(
+            children: const [
+               Center(
+                child: Image(
+                  image: AssetImage('images/graduation.jpg')
+                ),
+              ),
+              Text("Image of graduation. Hey there."),
+            ],
           ),
         ),
       ),
